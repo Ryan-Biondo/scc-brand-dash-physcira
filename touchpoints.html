@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character encoding and compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include the main CSS file -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Include the font for the website -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Include the main JavaScript file -->
+    <script src="js/script.js"></script>
+    <!-- Set the title of the webpage -->
+    <title>Touchpoints & Brand Assets</title>
+</head>
+
+<body>
+    <!-- Wrapper for the entire page -->
+    <div class="pagewrap">
+        <!-- Header section -->
+        <div class="headwrap" id="headwrap">
+            <div class="flexrow spacebetween">
+                <div class="branddash">
+                    <!-- Brand logo and link to homepage -->
+                    <a href="index.html">
+                        <div class="brandlogo"></div>
+                    </a>
+                    <a href="index.html">
+                        <span>Brand Dashboard</span>
+                    </a>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Button to toggle the navigation menu -->
+                <button onclick="menuOpen()" id="menubtn" class="menuhide">
+                    <img src="images/menu.png" alt="menu" id="menu" class="menupos">
+                </button>
+
+                <!-- Navigation menu -->
+                <div class="navbar">
+                    <div class="flexrow">
+                        <a href="brand.html">Brand & <br>Positioning<br>-</a>
+                    </div>
+                    <div class="flexrow">
+                        <a href="logo.html">Logo & <br>Identity Assests<br>-</a>
+                    </div>
+                    <div class="flexrow">
+                        <a href="touchpoints.html" class="activepage">Touchpoints & <br>Brand Assets<br>-</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of .flexrow -->
+        </div>
+        <!-- End of .headwrap -->
+
+        <!-- Hidden navigation menu -->
+        <div id="navmenu" class="hide">
+            <div class="navmain">
+                <div class="brandnav">
+                    <a href="brand.html">Brand & <br>Positioning<br>-</a>
+                </div>
+                <div class="logonav">
+                    <a href="logo.html">Logo & <br>Identity Assests<br>-</a>
+                </div>
+                <div class="touchpointsnav">
+                    <a href="touchpoints.html">Touchpoints & <br>Brand Assets<br>-</a>
+                </div>
+            </div>
+
+            <div id="menufooter">
+                <div class="copyright">
+                    <span>© 2022 SC Creative LLC</span>
+                </div>
+                <div class="scc">
+                    <div>This brand guide is powered by</div>
+                    <img id="footerlogo" src="images/SCC_Logo_FINAL-WT-03.png" alt="Sean Craig Creative">
+                </div>
+            </div>
+            <!-- End of #menufooter -->
+        </div>
+        <!-- End of #navmenu -->
+
+        <!-- Main content section -->
+        <div id="midsection">
+            <div class="touchpoint">
+                <h1>Brand Assets<br>-</h1>
+                <p>These libraries of assets include approved graphics for public. If there is any other image or
+                    visualization not displayed in these libraries its advised you contact Physcira through their
+                    website or company contact’s email. </p>
+            </div>
+
+            <!-- Media section -->
+            <div class="mediasection">
+                <div class="flexrow flexwrap vertflip">
+                    <!-- Visualizations media -->
+                    <div class="media">
+                        <a href="downloads/PhysciraVisualizations.zip" download="PhysciraVisualizations">
+                            <div class="mediaimg" id="visualizations"></div>
+                            <div>
+                                <div class="mediatitle">Visualizations</div>
+                                <div class="itemcount">23 Items</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Icons media -->
+                    <div class="media">
+                        <a href="downloads/PhysciraIcons.zip" download="PhysciraIcons">
+                            <div class="mediaimg" id="icons"></div>
+                            <div>
+                                <div class="mediatitle">Icons</div>
+                                <div class="itemcount">23 Items</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Graphics media -->
+                    <div class="media">
+                        <a href="downloads/PhysciraGraphics.zip" download="PhysciraGraphics">
+                            <div class="mediaimg" id="graphics"></div>
+                            <div>
+                                <div class="mediatitle">Graphics</div>
+                                <div class="itemcount">23 Items</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of .mediasection -->
+
+            <!-- Typography section -->
+            <div class="bodycopy typosection">
+                <div class="typohead">
+                    <div class="typotitle hidden">
+                        <h2>Typography<br>
+                            <span>Body Copy / Captions</span>
+                        </h2>
+                    </div>
+                    <div class="typodl">
+                        <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">
+                            <div class="purchase button">
+                                <span>Download</span>
+                            </div>
+                        </a>
+                        <div class="googletip">
+                            <span>Available on google.fonts.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fonttitle">
+                        <h3>Montserrat</h3>
+                    </div>
+                    <div class="alphanum">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+                    <div class="alphanum">abcdefghijklmnopqrstuvwxyz</div>
+                    <div class="alphanum">1234567890!@#$%^&*+</div>
+                </div>
+
+                <div class="flexrow hidden">
+                    <div class="bold">
+                        <h3>Bold</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit
+                            minima
+                            placeat. Beatae, rem amet. Quam maiores dignissimos, quaerat cupiditate voluptatibus
+                            reiciendis inventore consectetur maxime eveniet veniam alias nam atque.</p>
+                    </div>
+                    <div class="regular">
+                        <h3>Regular</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolorum enim ex
+                            rem
+                            numquam rerum, veritatis soluta, odio nam voluptates nulla dolore nostrum quia.
+                            Repudiandae
+                            eaque quasi nesciunt dolores perferendis.</p>
+                    </div>
+                    <div class="italic">
+                        <h3>Italic</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptate quae
+                            soluta
+                            sit
+                            voluptatum architecto assumenda explicabo atque iusto officia amet nobis, vero
+                            consequuntur
+                            repellat facere accusantium nesciunt itaque. Nemo!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of .typosection -->
+
+            <!-- Typography section -->
+            <div class="typography typosection">
+                <div class="typohead">
+                    <div class="typotitle hidden">
+                        <h2>Typography<br>
+                            <span>Headline / Display</span>
+                        </h2>
+                    </div>
+                    <div class="typodl typodlbutton">
+                        <a href="https://fonts.google.com/specimen/Mulish" target="_blank">
+                            <div class="download button">
+                                <span>Download</span>
+                            </div>
+                        </a>
+                        <div class="googletip">
+                            <span>Available on google.fonts.com</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fonttitle">
+                        <h3>Mulish</h3>
+                    </div>
+                    <div class="alphanum">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+                    <div class="alphanum">abcdefghijklmnopqrstuvwxyz</div>
+                    <div class="alphanum">1234567890!@#$%^&*+</div>
+                </div>
+
+                <div class="flexrow hidden">
+                    <div class="bold">
+                        <h3>Bold</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit
+                            minima
+                            placeat. Beatae, rem amet. Quam maiores dignissimos, quaerat cupiditate voluptatibus
+                            reiciendis inventore consectetur maxime eveniet veniam alias nam atque.</p>
+                    </div>
+                    <div class="regular">
+                        <h3>Regular</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolorum enim ex
+                            rem
+                            numquam rerum, veritatis soluta, odio nam voluptates nulla dolore nostrum quia.
+                            Repudiandae
+                            eaque quasi nesciunt dolores perferendis.</p>
+                    </div>
+                    <div class="italic">
+                        <h3>Italic</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptate quae
+                            soluta
+                            sit
+                            voluptatum architecto assumenda explicabo atque iusto officia amet nobis, vero
+                            consequuntur
+                            repellat facere accusantium nesciunt itaque. Nemo!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of .typosection -->
+
+
+           <!-- Color Palette Section -->
+<div class="touchpoint palette">
+    <h2>Color Palette</h2>
+    <p>The color palette is inspired by the components of physics and the boxes themselves. The primary colors represent physics and science, while the neutral tones mimic the components found in the physics box. This design choice creates a cohesive and thematic visual experience.</p>
+</div>
+
+<!-- Color Palette Button -->
+<button onclick="colorOpen()" id="colorpalettebutton">
+    <span>View Color Palette</span>
+</button>
+
+<!-- Color Palette Section -->
+            <div id="colorpalettesection" class="colorhide">
+                <!-- First Row of Colors -->
+                <div class="colorblockrow">
+                    <!-- Color Block: Physcira Teal -->
+                    <div class="colorblock primary" id="color1">
+                        <!-- Color Name -->
+                        <label>Physcira Teal</label>
+                        <!-- Color Values: RGB, CMYK, Hex -->
+                        <ul class="rgb">
+                            <li>R: 000%</li>
+                            <li>G: 178%</li>
+                            <li>B: 186%</li>
+                        </ul>
+                        <ul class="cmyk">
+                            <li>C: 086%</li>
+                            <li>M: 000%</li>
+                            <li>Y: 032%</li>
+                            <li>K: 000%</li>
+                        </ul>
+                        <ul class="hex">
+                            <li>#00B2BA</li>
+                        </ul>
+                    </div>
+
+                    <div class="colorblock primary" id="color2">
+                        <label>Physcira Gold</label><i class=""></i>
+                        <ul class="rgb">
+                            <li>R: 255%</li>
+                            <li>G: 206%</li>
+                            <li>B: 081%</li>
+                        </ul>
+                        <ul class="cmyk">
+                            <li>C: 000%</li>
+                            <li>M: 019%</li>
+                            <li>Y: 079%</li>
+                            <li>K: 000%</li>
+                        </ul>
+                        <ul class="hex">
+                            <li>#FFCE51</li>
+                        </ul>
+                    </div>
+
+                    <div class="colorblock primary" id="color3">
+                        <label>Physcira Wood</label><i class=""></i>
+                        <ul class="rgb">
+                            <li>R: 252%</li>
+                            <li>G: 231%</li>
+                            <li>B: 194%</li>
+                        </ul>
+                        <ul class="cmyk">
+                            <li>C: 000%</li>
+                            <li>M: 007%</li>
+                            <li>Y: 025%</li>
+                            <li>K: 001%</li>
+                        </ul>
+                        <ul class="hex">
+                            <li>#FCE7C2</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Second Row-->
+                <div class="colorblockrow" style="display: flex; justify-content: flex-end;">
+                    <div class="colorblock secondary  whitetext" id="color4">
+                        <label>Physcira Dark Teal</label>
+                        <ul class="rgb">
+                            <li>R: 028%</li>
+                            <li>G: 152%</li>
+                            <li>B: 158%</li>
+                        </ul>
+                        <ul class="cmyk">
+                            <li>C: 080%</li>
+                            <li>M: 021%</li>
+                            <li>Y: 038%</li>
+                            <li>K: 001%</li>
+                        </ul>
+                        <ul class="hex">
+                            <li>#1C989E</li>
+                        </ul>
+                    </div>
+
+                    <div class="colorblock secondary" id="color5">
+                        <label>Physcira Dark Gold</label>
+                        <ul class="rgb">
+                            <li>R: 235%</li>
+                            <li>G: 169%</li>
+                            <li>B: 000%</li>
+                        </ul>
+                        <ul class="cmyk">
+                            <li>C: 004%</li>
+                            <li>M: 037%</li>
+                            <li>Y: 100%</li>
+                            <li>K: 000%</li>
+                        </ul>
+                        <ul class="hex">
+                            <li>#EBA900</li>
+                        </ul>
+                    </div>
+
+                    <div class="colorblock secondary" id="color6">
+                        <label>Physcira Dark Wood</label>
+                        <ul class="rgb">
+                            <li>R: 250%</li>
+                            <li>G: 213%</li>
+                            <li>B: 148%</li>
+                        </ul>
+                        <ul class="cmyk">
+                            <li>C: 000%</li>
+                            <li>M: 018%</li>
+                            <li>Y: 052%</li>
+                            <li>K: 000%</li>
+                        </ul>
+                        <ul class="hex">
+                            <li>#FAD594</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Third Row -->
+                <div class="colorblockrow" style="display: flex; justify-content: flex-end;">
+                    <div class="colorblock secondary whitetext" id="color7">
+                        <label>Physcira Black</label>
+                        <ul class="rgb">
+                            <li>R: 035%</li>
+                            <li>G: 031%</li>
+                            <li>B: 032%</li>
+                        </ul>
+                        <ul class="cmyk">
+                            <li>C: 000%</li>
+                            <li>M: 000%</li>
+                            <li>Y: 000%</li>
+                            <li>K: 100%</li>
+                        </ul>
+                        <ul class="hex">
+                            <li>#231F20</li>
+                        </ul>
+                    </div>
+
+                    <div class="colorblock secondary" id="color8">
+                        <label>Physcira Steel</label>
+                        <ul class="rgb">
+                            <li>R: 164%</li>
+                            <li>G: 167%</li>
+                            <li>B: 169%</li>
+                        </ul>
+                        <ul class="cmyk">
+                            <li>C: 016%</li>
+                            <li>M: 011%</li>
+                            <li>Y: 011%</li>
+                            <li>K: 027%</li>
+                        </ul>
+                        <ul class="hex">
+                            <li>#A4A7A9</li>
+                        </ul>
+                    </div>
+
+                    <div class="colorblock secondary" id="color9">
+                        <label>Physcira White</label>
+                        <ul class="rgb">
+                            <li>R: 255%</li>
+                            <li>G: 255%</li>
+                            <li>B: 255%</li>
+                        </ul>
+                        <ul class="cmyk">
+                            <li>C: 000%</li>
+                            <li>M: 000%</li>
+                            <li>Y: 000%</li>
+                            <li>K: 000%</li>
+                        </ul>
+                        <ul class="hex">
+                            <li>#FFFFFF</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+       <!-- End of Color Palette Section -->
+
+<!-- Help Section -->
+<div class="helpsection brandhelp">
+    <div class="help">
+        <p>
+            Need help or just curious? Feel free to reach out to me at
+            <a href="mailto:hello@seancraigcreative.com" target="_blank">hello@seancraigcreative.com</a>.
+        </p>
+    </div>
+</div>
+
+<!-- Back to Top Button -->
+<a href="#">
+    <img src="images/arrow-right.svg" alt="top" id="backtotop">
+</a>
+
+<!-- Footer -->
+<footer class="footer">
+    <!-- Copyright -->
+    <div class="copyright">
+        <span>© 2022 SC Creative LLC</span>
+    </div>
+    <!-- Brand Attribution -->
+    <div class="scc">
+        <div>This brand guide is powered by</div>
+        <a href="https://seancraigcreative.com/" target="_blank">
+            <img id="footerlogo" src="images/SCC_Logo_FINAL-WT-03.png" alt="Sean Craig Creative">
+        </a>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</div>
+<!-- End of Page Wrap -->
+</body>
+
+</html>
