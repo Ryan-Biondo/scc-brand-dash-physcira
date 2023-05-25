@@ -16,7 +16,7 @@ Fixed JavaScript bug with close button remaining open on resize
 
 ## Demo
 
-![Brand Guide Navigation Demo](physcirascreenshot.png)
+![Brand Guide Demo](./images/physcirascreenshot.png)
 
 ## Technologies Used
 
