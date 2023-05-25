@@ -1,0 +1,1892 @@
+/* variables */
+:root {
+    /* Define custom CSS variables */
+    --main-brand-logo: url(../images/LogoAssets/Physcira_Logo_PRIMARY.png);
+    --white: white;
+    --black: #231f20;
+    --scc-black: #212121;
+    --physcira-steel: #a4a7a9;
+    --lighter-grey: #dce1e6;
+    --physcira-wood: #fce7c2;
+    --physcira-dark-wood: #fad594;
+    --physcira-teal: #00b2ba;
+    --physcira-dark-teal: #1c989e;
+    --physcira-gold: #ffce51;
+    --physcira-dark-gold: #eba900;
+}
+
+/* all pages */
+html,
+body {
+    /* Reset styles and set default font */
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    height: 100%;
+    width: 100vw;
+    max-width: 100%;
+
+    /* Paragraph styles */
+    p {
+        font-size: 1.1em;
+    }
+
+    /* Link styles */
+    a {
+        text-decoration: none;
+    }
+
+    /* Heading styles */
+    h1 {
+        font-weight: 520;
+        line-height: 1.3em;
+        font-size: 1.5em;
+        margin-bottom: 0.8em;
+    }
+    h2 {
+        font-weight: 520;
+        line-height: 1.5em;
+        font-size: 1.2em;
+        margin-bottom: 0.8em;
+    }
+    h3 {
+        font-size: 1em;
+        font-weight: 520;
+        line-height: 1.5em;
+    }
+}
+
+/* Page wrapper */
+.pagewrap {
+    /* Define page wrapper styles */
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+
+/* Brand logo */
+.brandlogo {
+    /* Styling for the brand logo */
+    min-height: 80px;
+    width: 15em;
+    background: center / contain no-repeat url(../images/LogoAssets/Physcira_Logo_PRIMARY.png);
+    margin-bottom: 1em;
+}
+
+/* Header section */
+.headwrap {
+    /* Styling for the header section */
+    background: var(--physcira-teal);
+    color: var(--white);
+    padding: 0 0 4em;
+}
+
+.branddash {
+    /* Styling for the brand dashboard */
+    margin: 3em 5em 0;
+
+    span {
+        font-size: 1.7em;
+        font-weight: 100;
+    }
+
+    a {
+        color: var(--white);
+    }
+}
+
+/* Space between */
+.spaceBetween {
+    /* Styling for elements with space between */
+    justify-content: space-between;
+}
+
+/* Footer */
+footer {
+    /* Styling for the footer section */
+    background: var(--scc-black);
+    max-height: 120px;
+    color: var(--white);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.scc {
+    /* Styling for SCC element */
+    display: flex;
+    align-items: center;
+}
+
+/* Copyright */
+copyright {
+    /* Styling for copyright section */
+    padding: 1.4em;
+}
+
+#footerlogo {
+    /* Styling for footer logo */
+    height: 40px;
+    vertical-align: middle;
+}
+
+/* Navbar */
+.navbar {
+    /* Styling for the navbar */
+    width: 50vw;
+    max-width: 800px;
+    margin: 3em 4em auto auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+
+    a {
+        color: var(--white);
+    }
+}
+
+/* Midsection */
+#midsection {
+    /* Styling for the midsection */
+    height: 100%;
+    background-color: var(--white);
+}
+
+.flexrow {
+    /* Styling for flex rows */
+    display: flex;
+}
+
+.flexgrow {
+    /* Styling for flex items with grow property */
+    flex-grow: 1;
+}
+
+.flexcol {
+    /* Styling for flex columns */
+    display: flex;
+    flex-direction: column;
+}
+
+.activepage {
+    /* Styling for active page */
+    border-left: 5px solid var(--white);
+    padding-left: 20px;
+    margin-right: -20px;
+}
+
+.hide {
+    /* Styling to hide elements */
+    display: none;
+}
+
+/* Sign In Page */
+#loginlogo {
+    /* Styling for the login logo */
+    min-height: 70px;
+    width: 12em;
+}
+
+.loginwrap {
+    /* Styling for the login wrapper */
+    background: var(--physcira-teal);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.loginsection {
+    /* Styling for the login section */
+    color: var(--white);
+    margin: 2em 0 1em 4em;
+    height: 70vh;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+
+    h1 {
+        line-height: 1.3em;
+        font-weight: 400;
+        font-size: 2em;
+    }
+}
+
+.logincontainer {
+    /* Styling for the login container */
+    height: 100%;
+    width: 300px;
+}
+
+.formpadding {
+    /* Styling for form padding */
+    padding: 3em 0 4em;
+}
+
+.logintext {
+    /* Styling for login text */
+    font-family: "Mulish", sans-serif;
+    margin-bottom: 2em;
+    padding: 1em;
+    width: 60vw;
+    max-width: 440px;
+    border: none;
+    font-size: 1em;
+}
+
+.active {
+    /* Styling for active elements */
+    border-radius: 0 2.5em 0 0;
+    transition: 0.4s;
+}
+
+#signin {
+    /* Styling for sign-in button */
+    padding: 1em 3em;
+    background-color: rgb(0, 89, 223);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 0.8em;
+    opacity: 0.8;
+    font-family: Mulish;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+
+.psw {
+    /* Styling for password recovery section */
+    a:link {
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+    a:hover {
+        color: white;
+    }
+    a:active {
+        color: white;
+    }
+}
+
+.helpsection {
+    /* Styling for help section */
+    background: var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+}
+
+.help {
+    /* Styling for help text */
+    line-height: 2em;
+    font-size: 1.2em;
+
+    a {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+/* Nav Page */
+.navwrap {
+    /* Styling for the nav wrapper */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navmain {
+    /* Styling for the nav main section */
+    height: 100%;
+    min-height: 8em;
+    font-size: 2em;
+    display: flex;
+
+    a {
+        color: black;
+    }
+}
+
+.navmain > div {
+    /* Styling for div elements within nav main */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.navmain > a {
+    /* Styling for links within nav main */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.navexpand {
+    /* Styling for nav expand section */
+    height: 100%;
+}
+
+.navhover {
+    /* Styling for nav hover section */
+    div {
+        &:hover {
+            cursor: pointer;
+            color: #ffffff;
+        }
+    }
+}
+
+.brandnav {
+    /* Styling for brand nav section */
+    background-color: var(--physcira-dark-teal);
+}
+
+.logonav {
+    /* Styling for login nav section */
+    background-color: var(--physcira-gold);
+}
+
+.touchpointsnav {
+    /* Styling for touchpoints nav section */
+    background-color: var(--physcira-wood);
+}
+
+.helpnav {
+    /* Styling for help nav section */
+    padding: 1.5em 0;
+}
+
+/* Brand Page */
+.brandsectionwrap {
+    /* Styling for the brand section wrapper */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.reverse {
+    /* Styling for reverse flex direction */
+    flex-direction: row-reverse;
+}
+
+.textsection {
+    /* Styling for the text section */
+    margin-top: 5em;
+}
+
+.brand {
+    /* Styling for brand text */
+    margin-left: 15em;
+    margin-right: 2em;
+    line-height: 1.7em;
+}
+
+.brandsectioncol {
+    /* Styling for brand section column */
+    width: 70vw;
+}
+
+.textcol {
+    /* Styling for text column */
+    margin-left: 5em;
+    margin-right: 9em;
+    max-width: 70vw;
+    line-height: 1.7em;
+
+    h3 {
+        /* Styling for heading 3 within text column */
+        margin-top: 0;
+    }
+}
+
+.textrow {
+    /* Styling for text row */
+    margin: 2em;
+    flex-grow: 1;
+    line-height: 1.7em;
+    max-width: 600px;
+}
+
+.brandimga {
+    /* Styling for brand image a */
+    height: 340px;
+    min-width: 500px;
+    background: center / contain no-repeat url(../images/teacher-row-image.png);
+    background-color: var(--white);
+}
+
+.brandimgb {
+    /* Styling for brand image b */
+    height: 340px;
+    min-width: 500px;
+    background: center / contain no-repeat url(../images/Physcira_Brand_Point1.jpg);
+    background-color: var(--white);
+}
+
+.brandimgc {
+    /* Styling for brand image c */
+    height: 340px;
+    min-width: 500px;
+    background: center / contain no-repeat url(../images/Artboard3M.png);
+    background-color: var(--white);
+}
+
+.brandimgd {
+    /* Styling for brand image d */
+    height: 700px;
+    background-color: var(--physcira-teal);
+    background: bottom / cover no-repeat url(../images/Artboard1M.png);
+    min-height: 1000px;
+    margin: 6em 0 0 0;
+}
+
+.brandimge {
+    /* Styling for brand image e */
+    height: 235px;
+    background: top / cover no-repeat url(../images/DougHetzlerPhysicsBusRibbonCutting.jpg);
+    background-position: 20%;
+    background-color: var(--physcira-gold);
+    flex-grow: 1;
+}
+
+.brandimgf {
+    /* Styling for brand image f */
+    height: 235px;
+    max-height: 235px;
+    background: 30% 30% / cover no-repeat url(../images/DSC08329-isolated.jpg);
+    background-color: var(--white);
+    flex-grow: 1.8;
+}
+
+.closer {
+    /* Styling for the closer section */
+    background: var(--physcira-teal);
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10vw;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* Logo Page */
+.logoimga {
+    /* Styling for logo image a */
+    height: 300px;
+    background: center / contain no-repeat url(../images/LogoAssets/Physcira_Logo_PRIMARY.png);
+    background-color: var(--white);
+    margin: 150px 0 0 0;
+}
+
+.centercol {
+    /* Styling for center column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uppercase {
+    /* Styling for uppercase text */
+    text-transform: uppercase;
+}
+
+.centertextsection {
+    /* Styling for center text section */
+    width: 50vw;
+    margin: 230px auto 1em;
+    line-height: 1.7em;
+
+    h1 {
+        /* Styling for heading 1 within center text section */
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    h3 {
+        /* Styling for heading 3 within center text section */
+        margin-top: 3em;
+    }
+}
+
+.logolist {
+    /* Styling for logo list */
+    column-gap: 3vw;
+    line-height: normal;
+
+    ul {
+        /* Styling for unordered list within logo list */
+        margin: 0 0 20px;
+        padding: 0 20px;
+    }
+}
+
+.logoimgb {
+    /* Styling for logo image b */
+    height: 32vw;
+    width: 100%;
+    background: center / contain no-repeat url(../images/LogoAssets/Physcira_Logo_SECONDARY.png);
+    background-color: lighten(#a4a7a9, 25%);
+    /* background: radial-gradient(white, var(--lighter-grey)); */
+}
+
+.downloadlogogroup {
+    /* Styling for download logo group */
+    width: 50vw;
+}
+
+.downloadlogo {
+    /* Styling for download logo */
+    width: 100%;
+    background-color: var(--physcira-teal);
+    text-align: center;
+    padding: 1.8vw 0;
+    font-size: 1.5em;
+    color: var(--white);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.centertextsectionlarge {
+    /* Styling for large center text section */
+    margin-top: 360px;
+    width: 60vw;
+    line-height: 1.7em;
+
+    p {
+        /* Styling for paragraphs within large center text section */
+        max-width: 50%;
+    }
+}
+
+.centertextsectionlargebox {
+    /* Styling for large center text section box */
+    width: 60vw;
+    line-height: 1.7em;
+    margin-top: 200px;
+
+    p {
+        /* Styling for paragraphs within large center text section box */
+        max-width: 50%;
+    }
+}
+
+.logoimgc {
+    /* Styling for logo image c */
+    height: 250px;
+    margin-right: 10px;
+    flex-grow: 1;
+    background: center / contain no-repeat url(../images/LogoAssets/Physcira_Logo_PRIMARY.png);
+    background-color: var(--white);
+}
+
+.logoimgd {
+    /* Styling for logo image d */
+    height: 200px;
+    flex-grow: 1;
+    background: center / contain no-repeat url(../images/LogoAssets/Physcira_Logo_SECONDARY.png);
+    background-color: var(--white);
+}
+
+.logoimge {
+    /* Styling for logo image e */
+    height: 200px;
+    margin-right: 10px;
+    flex-grow: 1;
+    background: center / contain no-repeat url(../images/LogoAssets/Physcira_Logo_WHITE.png);
+    background-color: var(--physcira-gold);
+}
+
+.logoimgf {
+    /* Styling for logo image f */
+    height: 200px;
+    flex-grow: 1;
+    background: center / contain no-repeat url(../images/LogoAssets/Physcira_Logo_WHITE.png);
+    background-color: var(--physcira-teal);
+}
+
+.logoimgg {
+    /* Styling for logo image g */
+    height: 10vw;
+    width: 10vw;
+    background: center / contain no-repeat url(../images/LogoAssets/Physcira_Logo_ICON.png) var(--white);
+    margin-top: 1em;
+}
+
+.vertalign {
+    /* Styling for vertical alignment */
+    align-items: center;
+}
+
+.rowtextsection {
+    /* Styling for row text section */
+    margin-left: 2em;
+    width: 40vw;
+}
+
+.logobox {
+    /* Styling for logo box */
+    margin-bottom: 7em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logocap {
+    /* Styling for logo cap */
+    height: 7vw;
+}
+
+.logocentercol {
+    /* Styling for logo center column */
+    width: 20vw;
+}
+
+.logoleft {
+    /* Styling for left logo */
+    width: 10vw;
+    background-color: var(--physcira-dark-wood);
+}
+
+.logoleftcenter {
+    /* Styling for left-center logo */
+    width: 10vw;
+    background-color: var(--physcira-wood);
+    display: flex;
+}
+
+.logoheight {
+    /* Styling for logo height */
+    display: flex;
+    width: 43vw;
+    background-color: var(--white);
+    height: auto;
+
+    img {
+        /* Styling for images within logo height */
+        width: 100%;
+    }
+}
+
+#clearspace {
+    /* Styling for clear space */
+    height: 13vw;
+}
+
+.logocapcenter {
+    /* Styling for center logo cap */
+    height: 7vw;
+    width: 43vw;
+    background-color: var(--physcira-wood);
+}
+
+.logoright {
+    /* Styling for right logo */
+    width: 10vw;
+    background-color: var(--physcira-dark-wood);
+    height: 100%;
+}
+
+.logorightmiddle {
+    /* Styling for middle of right logo */
+    width: 10vw;
+    height: 100%;
+    background-color: var(--physcira-wood);
+}
+
+.clearspaceheight {
+    /* Styling for clear space height */
+    display: flex;
+    width: 2000px;
+    position: relative;
+    right: 100px;
+    align-items: center;
+}
+
+.clearspacetext {
+    /* Styling for clear space text */
+    position: relative;
+    right: 30px;
+}
+
+#up {
+    /* Styling for up arrow */
+    position: absolute;
+    top: 0;
+    right: 9.5vw;
+}
+
+#down {
+    /* Styling for down arrow */
+    position: absolute;
+    bottom: 0;
+    right: 9.5vw;
+}
+
+.up {
+    /* Styling for up icon */
+    transform: rotate(180deg);
+    z-index: 2;
+    background-color: var(--white);
+}
+
+.arrow {
+    /* Styling for arrow */
+    position: relative;
+    left: 80px;
+}
+
+.down {
+    /* Styling for down icon */
+    position: relative;
+    top: 8px;
+    overflow: hidden;
+}
+
+/*touchpoints*/
+.touchpoint {
+    width: 50vw;
+    margin: 3em 0 0 15em;
+    line-height: 1.7em;
+}
+
+.palette {
+    /* Styling for palette section */
+    padding: 2em 0 2em;
+
+    h2 {
+        /* Styling for heading 2 within palette section */
+        font-size: 2em;
+    }
+}
+
+.mediasection {
+    /* Styling for media section */
+    width: 50vw;
+    margin: 1em 0 3em 14em;
+
+    .mediatitle {
+        /* Styling for media title */
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.8em;
+        margin: 1em 0em 0em;
+        color: var(--black);
+    }
+}
+
+.typosection {
+    /* Styling for typography section */
+    padding-left: 15em;
+    padding-right: 15em;
+    padding-bottom: 5em;
+}
+
+.typography {
+    /* Styling for typography */
+    background-color: var(--physcira-gold);
+    color: var(--black);
+}
+
+.typotitle {
+    /* Styling for typography title */
+    h2 {
+        margin: 0.2em 0;
+        font-size: 1.6em;
+        font-family: "Mulish", sans-serif;
+
+        span {
+            /* Styling for span within typography title */
+            font-size: 0.8em;
+        }
+    }
+}
+
+.fonttitle {
+    /* Styling for font title */
+    h3 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 5em;
+    }
+}
+
+.alphanum {
+    /* Styling for alphanum */
+    font-size: 3em;
+    word-break: break-all;
+}
+
+.bodycopy {
+    /* Styling for body copy */
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--physcira-teal);
+    color: white;
+}
+
+.typohead {
+    /* Styling for typography head */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.typodl {
+    /* Styling for typography dl */
+    padding-top: 2em;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: -200px;
+    top: 0px;
+    font-family: "Mulish", sans-serif;
+}
+
+.button {
+    /* Styling for button */
+    font-size: 1.5em;
+    height: 3em;
+    width: 10em;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.download {
+    /* Styling for download button */
+    background-color: var(--physcira-teal);
+    color: white;
+}
+
+.purchase {
+    /* Styling for purchase button */
+    background-color: var(--physcira-gold);
+    color: var(--black);
+}
+
+.bold {
+    /* Styling for bold section */
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 2.5em 0;
+    }
+
+    p {
+        font-weight: bold;
+        margin-right: 1em;
+    }
+}
+
+.regular {
+    /* Styling for regular section */
+    h3 {
+        font-weight: normal;
+        text-transform: uppercase;
+        margin: 2.5em 0;
+    }
+
+    p {
+        margin-right: 1em;
+    }
+}
+
+.italic {
+    /* Styling for italic section */
+    h3 {
+        font-style: italic;
+        text-transform: uppercase;
+        margin: 2.5em 0;
+    }
+
+    p {
+        font-style: italic;
+        margin-right: 1em;
+    }
+}
+
+.media {
+    /* Styling for media */
+    margin: 0.5em 1em 0.5em 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.mediaimg {
+    /* Styling for media image */
+    height: 18vw;
+    width: 22vw;
+}
+
+#team {
+    /* Styling for team section */
+    background: center / contain no-repeat var(--lighter-grey);
+}
+
+#products {
+    /* Styling for products section */
+    background: center / contain no-repeat var(--lighter-grey);
+}
+
+#visualizations {
+    /* Styling for visualizations section */
+    background: center / contain no-repeat url(../images/Visualizations/AmericanPastClientsMap_v7-01.png);
+    background-color: lighten(#a4a7a9, 25%);
+
+    &:hover {
+        background-color: var(--physcira-steel);
+    }
+}
+
+#locations {
+    /* Styling for locations section */
+    background: center / contain no-repeat;
+    background-color: lighten(#a4a7a9, 25%);
+
+    &:hover {
+        background-color: #a4a7a9;
+    }
+}
+
+#stockphotos {
+    /* Styling for stock photos section */
+    background: center / contain no-repeat;
+    background-color: lighten(#a4a7a9, 25%);
+
+    &:hover {
+        background-color: #a4a7a9;
+    }
+}
+
+#icons {
+    /* Styling for icons section */
+    background: center / contain no-repeat url(../images/Icons/square-icons-51.png);
+    background-color: lighten(#a4a7a9, 25%);
+
+    &:hover {
+        background-color: #a4a7a9;
+    }
+}
+
+#offices {
+    /* Styling for offices section */
+    background: center / contain no-repeat;
+    background-color: lighten(#a4a7a9, 25%);
+
+    &:hover {
+        background-color: #a4a7a9;
+    }
+}
+
+#graphics {
+    /* Styling for graphics section */
+    background: center / contain no-repeat url(../images/Graphics/Anatoliy_1-06.png);
+    background-color: lighten(#a4a7a9, 25%);
+
+    &:hover {
+        background-color: #a4a7a9;
+    }
+}
+
+#colorpalettebutton {
+    /* Styling for color palette button */
+    display: none;
+}
+
+.itemcount {
+    /* Styling for item count */
+    font-size: 0.7em;
+    margin: 0.5em 0;
+    color: var(--black);
+}
+
+.flexwrap {
+    /* Styling for flex wrap */
+    flex-wrap: wrap;
+    width: 80vw;
+}
+
+#pageend {
+    /* Styling for page end */
+    margin-top: 3em;
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    display: none; //remove with photos
+}
+
+// color palette
+.colorblockrow {
+    /* Styling for color block row */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.colorblock {
+    /* Styling for color block */
+    width: 33.33%;
+    align-items: flex-start;
+}
+
+.colorblock label {
+    /* Styling for color block label */
+    margin: 50px;
+    margin-bottom: 0;
+    display: block;
+}
+
+.colorblock ul {
+    /* Styling for color block unordered list */
+    list-style: none;
+    display: inline-block;
+}
+
+.colorblock ul.rgb {
+    /* Styling for RGB color block unordered list */
+    margin-top: 50px;
+}
+
+.colorblock ul.cmyk {
+    /* Styling for CMYK color block unordered list */
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.colorblock ul.hex {
+    /* Styling for HEX color block unordered list */
+    margin-top: 1em;
+}
+
+.colorblock li {
+    /* Styling for color block list item */
+    margin-bottom: 1em;
+}
+
+.primary {
+    /* Styling for primary color */
+    height: inherit;
+    min-height: 200px;
+    padding-top: 200px;
+}
+
+.secondary {
+    /* Styling for secondary color */
+    min-height: 100px;
+    height: inherit;
+}
+
+#color1 {
+    /* Styling for color 1 */
+    background-color: var(--physcira-teal);
+}
+
+#color2 {
+    /* Styling for color 2 */
+    background-color: var(--physcira-gold);
+}
+
+#color3 {
+    /* Styling for color 3 */
+    background-color: var(--physcira-wood);
+}
+
+#color4 {
+    /* Styling for color 4 */
+    background-color: var(--physcira-dark-teal);
+}
+
+#color5 {
+    /* Styling for color 5 */
+    background-color: var(--physcira-dark-gold);
+}
+
+#color6 {
+    /* Styling for color 6 */
+    background-color: var(--physcira-dark-wood);
+}
+
+#color7 {
+    /* Styling for color 7 */
+    background-color: var(--black);
+}
+
+#color8 {
+    /* Styling for color 8 */
+    background-color: var(--physcira-steel);
+}
+
+#color9 {
+    /* Styling for color 9 */
+    background-color: var(--white);
+}
+
+.whitetext {
+    /* Styling for white text */
+    color: #ffffff;
+}
+
+// end of color palette
+
+/* Media queries for max-width: 1440px */
+@media all and (max-width: 1440px) {
+    .brand {
+        /* Styling for brand */
+        margin: auto;
+        width: 50vw;
+    }
+    .brandimga,
+    .brandimgb,
+    .brandimgc {
+        /* Styling for brand images */
+        align-self: start;
+    }
+    .brandimgd {
+        /* Styling for brand image D */
+        background: bottom / cover no-repeat url(../images/Artboard1M.png);
+        min-height: 700px;
+    }
+}
+
+/* Media queries for max-width: 1000px */
+@media all and (max-width: 1000px) {
+    .brandimgd {
+        /* Styling for brand image D */
+        background: bottom / 100% no-repeat url(../images/Artboard1M.png);
+        height: fit-content;
+    }
+    .brandimgdwrap {
+        /* Styling for wrapped brand image D */
+        min-height: 300px;
+    }
+}
+
+/* Media queries for max-width: 1200px */
+@media all and (max-width: 1200px) {
+    .mediaimg {
+        /* Styling for media images */
+        height: 200px;
+        width: 200px;
+    }
+    .brandsectionwrap {
+        /* Styling for brand section wrap */
+        display: block;
+        margin-top: 0;
+    }
+    .brandimga {
+        /* Styling for brand image A */
+        margin-top: 2em;
+        max-width: 30vw;
+        height: 30vw;
+    }
+    #brandintro {
+        /* Styling for brand intro */
+        display: flex;
+    }
+    #brandintrotext {
+        /* Styling for brand intro text */
+        width: 60vw;
+        word-wrap: break-word;
+    }
+    .brandsectioncol {
+        /* Styling for brand section column */
+        margin: 0 1em 0 3em;
+        width: 50%;
+        text-align: left;
+        div {
+            /* Styling for nested div */
+            width: 80vw;
+            margin: 0 auto;
+        }
+    }
+    .brand {
+        /* Styling for brand */
+        margin: 0;
+    }
+    .brandimga,
+    .brandimgb,
+    .brandimgc {
+        /* Styling for brand images A, B, and C */
+        align-self: start;
+        width: 100%;
+        margin-bottom: 3em;
+        min-width: 200px;
+    }
+    .brandimgc {
+        /* Styling for brand image C */
+        margin-top: 3em;
+    }
+    .brandimgd {
+        /* Styling for brand image D */
+        margin-top: 3em;
+    }
+    .logoimgg {
+        /* Styling for logo image G */
+        height: 15vw;
+        width: 15vw;
+    }
+    .centertextsection {
+        /* Styling for centered text section */
+        width: 60vw;
+        margin-top: 100px;
+    }
+    .centertextsectionlarge {
+        /* Styling for large centered text section */
+        margin-top: 130px;
+        width: 60vw;
+        .flexrow {
+            /* Styling for flex row within centered text section */
+            flex-direction: column;
+        }
+        p {
+            /* Styling for paragraphs within centered text section */
+            max-width: 100%;
+        }
+        .logoimgc {
+            /* Styling for logo image C */
+            height: 200px;
+            margin-right: 0;
+            margin-bottom: 0.6em;
+            flex-grow: 1;
+        }
+        .logoimgd {
+            /* Styling for logo image D */
+            height: 200px;
+        }
+        .logoimge {
+            /* Styling for logo image E */
+            height: 200px;
+            margin-right: 0;
+            margin-bottom: 0.6em;
+            flex-grow: 1;
+        }
+        .logoimgf {
+            /* Styling for logo image F */
+            height: 200px;
+        }
+    }
+    .centertextsectionlargebox {
+        /* Styling for large centered text section box */
+        margin-top: 75px;
+        p {
+            /* Styling for paragraphs within large centered text section box */
+            max-width: 100%;
+        }
+    }
+    .logobox {
+        /* Styling for logo box */
+        width: 60vw;
+    }
+    .mediaimg {
+        /* Styling for media images */
+        height: 17vw;
+        width: 17vw;
+        margin-right: 0.5em;
+    }
+    .touchpoint {
+        /* Styling for touchpoint */
+        width: 60vw;
+        margin: 1.5em auto;
+        line-height: 1.7em;
+    }
+    .midsection {
+        /* Styling for midsection */
+        margin-left: 0;
+    }
+    .mediasection {
+        /* Styling for media section */
+        width: 60vw;
+    }
+    .typosection {
+        /* Styling for typography section */
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 5em;
+    }
+    .typodl {
+        /* Styling for typography definition list */
+        position: static;
+        margin-right: 0em;
+    }
+    .flexwrap {
+        /* Styling for flex wrap */
+        max-width: 70vw;
+        margin-right: 0;
+    }
+}
+
+/* Media queries for max-width: 1150px */
+@media all and (max-width: 1150px) {
+    .colorblock {
+        /* Styling for color block */
+        padding-top: 30px;
+    }
+    .colorblock label {
+        /* Styling for color block label */
+        margin-top: 0;
+    }
+    .colorblock li {
+        /* Styling for color block list item */
+        margin-bottom: 0.7em;
+    }
+    .colorblock ul {
+        /* Styling for color block unordered list */
+        margin-bottom: 0;
+    }
+    .colorblock ul.hex {
+        /* Styling for HEX color block unordered list */
+        margin-top: 0;
+    }
+}
+
+/* Media queries for max-width: 920px */
+@media all and (max-width: 920px) {
+    .navmain {
+        /* Styling for main navigation */
+        a {
+            /* Styling for navigation links */
+            font-size: 0.8em;
+        }
+    }
+    .headwrap {
+        /* Styling for header wrap */
+        height: 400px;
+        .navbar {
+            /* Styling for navigation bar */
+            flex-direction: column;
+            margin: 2em 2em 2em 0;
+            text-align: right;
+            div {
+                /* Styling for nested div within navigation bar */
+                margin: 10px 1em 30px;
+            }
+        }
+    }
+    .brand {
+        /* Styling for brand */
+        margin: auto;
+        width: 90vw;
+    }
+    .textcol {
+        /* Styling for text column */
+        margin: auto;
+        max-width: 80vw;
+    }
+    .logoimgg {
+        /* Styling for logo image G */
+        align-self: start;
+    }
+    .helpsection {
+        /* Styling for help section */
+        height: 30vw;
+    }
+    .mediasection {
+        /* Styling for media section */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar {
+        /* Styling for navigation bar */
+        align-items: flex-end;
+    }
+    .activepage {
+        /* Styling for active page */
+        border-right: 5px solid var(--white);
+        border-left: none;
+        padding-right: 20px;
+        margin-left: -20px;
+    }
+}
+
+/* Media queries for min-height: 880px */
+@media all and (min-height: 880px) {
+    .loginwrap {
+        /* Styling for login wrap */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+    }
+    .loginwrap::-webkit-scrollbar {
+        /* Styling for scrollbar within login wrap */
+        display: none; /* Safari and Chrome */
+    }
+}
+// end min-height: 880px
+
+/* Media queries for max-width: 768px */
+@media all and (max-width: 768px) {
+    .clearspacetext {
+        /* Styling for clear space text */
+        right: 0px;
+        line-height: 1em;
+    }
+    #brandintro {
+        /* Styling for brand intro section */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #brandimga {
+        /* Styling for brand image A */
+        margin: 0 0 1em 0;
+        max-width: 100vw;
+        height: 340px;
+        width: 100%;
+    }
+    .brandimgd {
+        /* Styling for brand image D */
+        min-height: 500px;
+    }
+    #brandintrotext {
+        /* Styling for brand intro text */
+        min-width: 80vw;
+    }
+    .flexwrap {
+        /* Styling for flex wrap */
+        min-width: 75vw;
+    }
+    .primary {
+        /* Styling for primary section */
+        height: inherit;
+        min-height: 50px;
+    }
+    .secondary {
+        /* Styling for secondary section */
+        max-height: 350px;
+    }
+}
+// end max-width: 768px
+
+/* Media queries for max-width: 610px */
+@media all and (max-width: 610px) {
+    .brandimgd {
+        /* Styling for brand image D */
+        min-height: 300px;
+    }
+    #backtotop {
+        /* Styling for back-to-top button */
+        display: block;
+        position: fixed;
+        z-index: 100;
+        background: var(--scc-black);
+        filter: opacity(80%);
+        margin: 0;
+        right: 0;
+        bottom: 90px;
+        height: 40px;
+        width: 40px;
+        transform: rotate(270deg);
+        padding: 1em;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .pagewrap {
+        /* Styling for page wrap */
+        h1 {
+            font-size: 1.3em;
+        }
+        h2 {
+            font-size: 1em;
+        }
+    }
+    .navmain {
+        /* Styling for main navigation */
+        flex-direction: column;
+        height: 70vh;
+        min-height: 450px;
+    }
+    .navmain > div {
+        /* Styling for navigation main div */
+        height: 100%;
+        a {
+            font-size: 0.8em;
+            padding: 2vh 0 0 2vh;
+        }
+    }
+    .help {
+        /* Styling for help section */
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+    .helpsection {
+        /* Styling for help section */
+        height: 200px;
+    }
+    .brandlogo {
+        /* Styling for brand logo */
+        width: 30vw;
+    }
+    footer {
+        /* Styling for footer */
+        height: 90px;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        .scc {
+            div {
+                width: 10em;
+                text-align: right;
+                margin-right: 10px;
+            }
+        }
+        .copyright {
+            padding: 0;
+        }
+    }
+    .logoimgg {
+        /* Styling for logo image G */
+        height: 15vw;
+        width: 15vw;
+    }
+    .empty {
+        /* Styling for empty section */
+        height: 0;
+    }
+    #vertflip {
+        /* Styling for vertical flip */
+        flex-direction: column;
+    }
+    .media {
+        /* Styling for media */
+        display: flex;
+    }
+    .arrow {
+        /* Styling for arrow */
+        height: 12vw;
+    }
+    .clearspacetext {
+        /* Styling for clear space text */
+        margin: 0 -1em 0 2em;
+        font-size: 0.8em;
+    }
+    .hidden {
+        /* Styling for hidden section */
+        display: none;
+    }
+    .typosection {
+        /* Styling for typography section */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .alphanum {
+        /* Styling for alphanumeric */
+        font-size: 2em;
+    }
+    .typohead {
+        /* Styling for typography header */
+        margin: auto;
+        .googletip {
+            font-size: 1.2em;
+            width: 60%;
+            text-align: center;
+        }
+    }
+    .vertflip {
+        /* Styling for vertical flip */
+        flex-direction: column;
+    }
+    .loginsection {
+        /* Styling for login section */
+        margin: 0;
+        h1 {
+            margin: 0.2em 0 1em 1em;
+        }
+    }
+    .logincontainer {
+        /* Styling for login container */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .psw {
+        /* Styling for password */
+        display: flex;
+        justify-content: center;
+    }
+    .logintext {
+        /* Styling for login text */
+        font-family: Mulish;
+        margin-bottom: 2em;
+        padding: 1.5em 20px;
+        width: 70vw;
+        max-width: 440px;
+        font-size: 1em;
+    }
+    .active {
+        /* Styling for active section */
+        transition: 0.2s;
+    }
+    .brandlogo {
+        /* Styling for brand logo */
+        min-width: 230px;
+        margin: 0;
+    }
+    #signin {
+        /* Styling for sign-in */
+        width: calc(70vw + 40px);
+        white-space: nowrap;
+        word-break: keep-all;
+        margin: 0;
+        font-size: 1em;
+    }
+    .navbar {
+        /* Styling for navigation bar */
+        display: none;
+    }
+    .menupos {
+        /* Styling for menu position */
+        align-items: center;
+        justify-content: center;
+        filter: invert(100%);
+        height: 40px;
+        margin: auto 2em auto 0;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .show {
+        /* Styling for show section */
+        display: block;
+    }
+    #menubtn {
+        /* Styling for menu button */
+        background: none;
+        appearance: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+    .divider {
+        /* Styling for divider */
+        border-left: 1px solid var(--white);
+    }
+    .headwrap {
+        /* Styling for header wrap */
+        padding: 2em 0em 0 1em;
+        max-height: 110px;
+    }
+    .branddash {
+        /* Styling for brand dash */
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            /* Styling for brand dash span */
+            display: block;
+            font-size: 1em;
+            width: 100px;
+            word-break: break-word;
+        }
+    }
+    #navpadding {
+        /* Styling for navigation padding */
+        padding: 1em 0 2em 0;
+    }
+    #navbranddash {
+        /* Styling for navigation brand dash */
+        display: flex;
+        flex-direction: column;
+        span {
+            /* Styling for navigation brand dash span */
+            width: auto;
+            font-size: 1.3em;
+        }
+    }
+    #navheadwrap {
+        /* Styling for navigation header wrap */
+        align-items: center;
+        justify-content: center;
+    }
+    .downloadlogogroup {
+        /* Styling for download logo group */
+        width: 100%;
+        .downloadlogo {
+            padding: 1em 0;
+        }
+    }
+    .logoimgb {
+        /* Styling for logo image B */
+        height: 50vw;
+    }
+    .centertextsection,
+    .centertextsectionlarge {
+        /* Styling for center text section */
+        margin-top: 2em;
+        min-width: 80vw;
+    }
+    .centertextsectionlargebox {
+        /* Styling for large center text section box */
+        margin-top: 2em;
+    }
+    .rowtextsection {
+        /* Styling for row text section */
+        flex-grow: 1;
+    }
+    .flexwrap {
+        /* Styling for flex wrap */
+        max-width: 60vw;
+    }
+    .touchpoint {
+        /* Styling for touchpoint */
+        min-width: 80vw;
+        h2 {
+            width: 100px;
+        }
+    }
+    .button,
+    #colorpalettebutton {
+        /* Styling for button and color palette button */
+        height: 3em;
+        width: 85vw;
+        border: none;
+    }
+    .media {
+        /* Styling for media */
+        .mediatitle {
+            margin-top: 0.5em;
+            font-size: 1.1em;
+        }
+        .itemcount {
+            font-size: 1em;
+        }
+        .mediaimg {
+            margin-right: 1.5em;
+            margin-bottom: 1em;
+        }
+    }
+    .mediasection {
+        /* Styling for media section */
+        h2 {
+            font-size: 2em;
+        }
+    }
+    .colorhide {
+        /* Styling for hidden colors */
+        display: none;
+    }
+    #colorpalettebutton {
+        /* Styling for color palette button */
+        display: flex;
+        font-size: 1.5em;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--physcira-gold);
+        color: var(--white);
+        margin-bottom: 4em;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .navshow {
+        /* Styling for navigation show */
+        display: flex;
+    }
+    .fonttitle {
+        /* Styling for font title */
+        h3 {
+            font-size: 4em;
+        }
+    }
+    ul {
+        /* Styling for unordered list */
+        margin-left: -3%;
+    }
+    .colorblockrow {
+        /* Styling for color block row */
+        flex-direction: column;
+    }
+    .colorblock {
+        /* Styling for color block */
+        width: 100%;
+    }
+    .colorblock ul.rgb {
+        /* Styling for color block RGB list */
+        margin-top: 10px;
+    }
+    .colorblock label {
+        /* Styling for color block label */
+        margin: 0, 0, 0, 0;
+    }
+    .primary {
+        /* Styling for primary section */
+        min-height: 100px;
+    }
+    .secondary {
+        /* Styling for secondary section */
+        max-height: 350px;
+    }
+    .menuhide {
+        /* Styling for hidden menu */
+        display: flex;
+    }
+}
+/* end max-width: 610px */
+
+@media all and (min-width: 610px) {
+    /* Hide elements with the class 'hide' */
+    .hide {
+        display: none;
+    }
+    /* Hide elements with the class 'menuhide' */
+    .menuhide {
+        display: none;
+    }
+    /* Hide the element with the id 'backtotop' */
+    #backtotop {
+        display: none;
+    }
+}
+// end min-width: 610px
+
+@media all and (max-width: 375px) {
+    /* Adjust the left position of elements with the class 'clearspacetext' */
+    .clearspacetext {
+        left: 10px;
+    }
+    /* Adjust the minimum width and padding-left of elements with the class 'brandlogo' */
+    .brandlogo {
+        min-width: 20vw;
+        //width: 20px;
+        padding-left: 0;
+    }
+}
+// end max-width: 375px
+
+@media all and (max-width: 320px) {
+    /* Adjust the font-size of label and li elements */
+    label,
+    li {
+        font-size: 0.8em;
+    }
+}
+// end max-width: 375px

@@ -1,0 +1,1523 @@
+/* variables */
+:root {
+  --main-brand-logo: url(../images/LogoAssets/Physcira_Logo_PRIMARY.png);
+  --white: white;
+  --black: #231f20;
+  --scc-black: #212121;
+  --physcira-steel: #a4a7a9;
+  --lighter-grey: #dce1e6;
+  --physcira-wood: #fce7c2;
+  --physcira-dark-wood: #fad594;
+  --physcira-teal: #00b2ba;
+  --physcira-dark-teal: #1c989e;
+  --physcira-gold: #ffce51;
+  --physcira-dark-gold: #eba900;
+}
+
+/* all pages */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+}
+html p,
+body p {
+  font-size: 1.1em;
+}
+html a,
+body a {
+  text-decoration: none;
+}
+html h1,
+body h1 {
+  font-weight: 520;
+  line-height: 1.3em;
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+}
+html h2,
+body h2 {
+  font-weight: 520;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+html h3,
+body h3 {
+  font-size: 1em;
+  font-weight: 520;
+  line-height: 1.5em;
+}
+
+.pagewrap {
+  margin: 0;
+  height: auto;
+  width: auto;
+}
+
+.brandlogo {
+  min-height: 80px;
+  width: 15em;
+  background: center/contain no-repeat url(../images/LogoAssets/Physcira_Logo_PRIMARY.png);
+  margin-bottom: 1em;
+}
+
+.headwrap {
+  background: var(--physcira-teal);
+  color: var(--white);
+  padding: 0 0 4em;
+}
+
+.branddash {
+  margin: 3em 5em 0;
+}
+.branddash span {
+  font-size: 1.7em;
+  font-weight: 100;
+}
+.branddash a {
+  color: var(--white);
+}
+
+.spacebetween {
+  justify-content: space-between;
+}
+
+footer {
+  background: var(--scc-black);
+  max-height: 120px;
+  color: var(--white);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.scc {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  padding: 1.4em;
+}
+
+#footerlogo {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.navbar {
+  width: 50vw;
+  max-width: 800px;
+  margin: 3em 4em auto auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+.navbar a {
+  color: var(--white);
+}
+
+#midsection {
+  height: 100%;
+  background-color: var(--white);
+}
+
+.flexrow {
+  display: flex;
+}
+
+.flexgrow {
+  flex-grow: 1;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.activepage {
+  border-left: 5px solid var(--white);
+  padding-left: 20px;
+  margin-right: -20px;
+}
+
+.hide {
+  display: none;
+}
+
+/*Sign In Page*/
+#loginlogo {
+  min-height: 70px;
+  width: 12em;
+}
+
+.loginwrap {
+  background: var(--physcira-teal);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.loginsection {
+  color: var(--white);
+  margin: 2em 0 1em 4em;
+  height: 70vh;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+}
+.loginsection h1 {
+  line-height: 1.3em;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.logincontainer {
+  height: 100%;
+  width: 300px;
+}
+
+.formpadding {
+  padding: 3em 0 4em;
+}
+
+.logintext {
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 2em;
+  padding: 1em;
+  width: 60vw;
+  max-width: 440px;
+  border: none;
+  font-size: 1em;
+}
+
+.active {
+  border-radius: 0 2.5em 0 0;
+  transition: 0.4s;
+}
+
+#signin {
+  padding: 1em 3em;
+  background-color: rgb(0, 89, 223);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 0.8em;
+  opacity: 0.8;
+  font-family: Mulish;
+}
+#signin:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.psw a:link {
+  color: white;
+}
+.psw a:visited {
+  color: white;
+}
+.psw a:hover {
+  color: white;
+}
+.psw a:active {
+  color: white;
+}
+
+.helpsection {
+  background: var(--white);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vw;
+}
+
+.help {
+  line-height: 2em;
+  font-size: 1.2em;
+}
+.help a {
+  color: black;
+  font-weight: bold;
+}
+
+/*nav page*/
+.navwrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navmain {
+  height: 100%;
+  min-height: 8em;
+  font-size: 2em;
+  display: flex;
+}
+.navmain a {
+  color: black;
+}
+
+.navmain > div {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.navmain > a {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.navexpand {
+  height: 100%;
+}
+
+.navhover div:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.brandnav {
+  background-color: var(--physcira-dark-teal);
+}
+
+.logonav {
+  background-color: var(--physcira-gold);
+}
+
+.touchpointsnav {
+  background-color: var(--physcira-wood);
+}
+
+.helpnav {
+  padding: 1.5em 0;
+}
+
+/*Brand Page*/
+.brandsectionwrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.textsection {
+  margin-top: 5em;
+}
+
+.brand {
+  margin-left: 15em;
+  margin-right: 2em;
+  line-height: 1.7em;
+}
+
+.brandsectioncol {
+  width: 70vw;
+}
+
+.textcol {
+  margin-left: 5em;
+  margin-right: 9em;
+  max-width: 70vw;
+  line-height: 1.7em;
+}
+.textcol h3 {
+  margin-top: 0;
+}
+
+.textrow {
+  margin: 2em;
+  flex-grow: 1;
+  line-height: 1.7em;
+  max-width: 600px;
+}
+
+.brandimga {
+  height: 340px;
+  min-width: 500px;
+  background: center/contain no-repeat url(../images/teacher-row-image.png);
+  background-color: var(--white);
+}
+
+.brandimgb {
+  height: 340px;
+  min-width: 500px;
+  background: center/contain no-repeat url(../images/Physcira_Brand_Point1.jpg);
+  background-color: var(--white);
+}
+
+.brandimgc {
+  height: 340px;
+  min-width: 500px;
+  background: center/contain no-repeat url(../images/Artboard3M.png);
+  background-color: var(--white);
+}
+
+.brandimgd {
+  height: 700px;
+  background-color: var(--physcira-teal);
+  background: bottom/cover no-repeat url(../images/Artboard1M.png);
+  min-height: 1000px;
+  margin: 6em 0 0 0;
+}
+
+.brandimge {
+  height: 235px;
+  background: top/cover no-repeat url(../images/DougHetzlerPhysicsBusRibbonCutting.jpg);
+  background-position: 20%;
+  background-color: var(--physcira-gold);
+  flex-grow: 1;
+}
+
+.brandimgf {
+  height: 235px;
+  max-height: 235px;
+  background: 30% 30%/cover no-repeat url(../images/DSC08329-isolated.jpg);
+  background-color: var(--white);
+  flex-grow: 1.8;
+}
+
+.closer {
+  background: var(--physcira-teal);
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10vw;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/*logo page*/
+.logoimga {
+  height: 300px;
+  background: center/contain no-repeat url(../images/LogoAssets/Physcira_Logo_PRIMARY.png);
+  background-color: var(--white);
+  margin: 150px 0 0 0;
+}
+
+.centercol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.centertextsection {
+  width: 50vw;
+  margin: 230px auto 1em;
+  line-height: 1.7em;
+}
+.centertextsection h1 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.centertextsection h3 {
+  margin-top: 3em;
+}
+
+.logolist {
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+  line-height: normal;
+}
+.logolist ul {
+  margin: 0 0 20px;
+  padding: 0 20px;
+}
+
+.logoimgb {
+  height: 32vw;
+  width: 100%;
+  background: center/contain no-repeat url(../images/LogoAssets/Physcira_Logo_SECONDARY.png);
+  background-color: #e6e6e7;
+}
+
+.downloadlogogroup {
+  width: 50vw;
+}
+
+.downloadlogo {
+  width: 100%;
+  background-color: var(--physcira-teal);
+  text-align: center;
+  padding: 1.8vw 0;
+  font-size: 1.5em;
+  color: var(--white);
+}
+.downloadlogo:hover {
+  cursor: pointer;
+}
+
+.centertextsectionlarge {
+  margin-top: 360px;
+  width: 60vw;
+  line-height: 1.7em;
+}
+.centertextsectionlarge p {
+  max-width: 50%;
+}
+
+.centertextsectionlargebox {
+  width: 60vw;
+  line-height: 1.7em;
+  margin-top: 200px;
+}
+.centertextsectionlargebox p {
+  max-width: 50%;
+}
+
+.logoimgc {
+  height: 250px;
+  margin-right: 10px;
+  flex-grow: 1;
+  background: center/contain no-repeat url(../images/LogoAssets/Physcira_Logo_PRIMARY.png);
+  background-color: var(--white);
+}
+
+.logoimgd {
+  height: 200px;
+  flex-grow: 1;
+  background: center/contain no-repeat url(../images/LogoAssets/Physcira_Logo_SECONDARY.png);
+  background-color: var(--white);
+}
+
+.logoimge {
+  height: 200px;
+  margin-right: 10px;
+  flex-grow: 1;
+  background: center/contain no-repeat url(../images/LogoAssets/Physcira_Logo_WHITE.png);
+  background-color: var(--physcira-gold);
+}
+
+.logoimgf {
+  height: 200px;
+  flex-grow: 1;
+  background: center/contain no-repeat url(../images/LogoAssets/Physcira_Logo_WHITE.png);
+  background-color: var(--physcira-teal);
+}
+
+.logoimgg {
+  height: 10vw;
+  width: 10vw;
+  background: center/contain no-repeat url(../images/LogoAssets/Physcira_Logo_ICON.png) var(--white);
+  margin-top: 1em;
+}
+
+.vertalign {
+  align-items: center;
+}
+
+.rowtextsection {
+  margin-left: 2em;
+  width: 40vw;
+}
+
+.logobox {
+  margin-bottom: 7em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logocap {
+  height: 7vw;
+}
+
+.logocentercol {
+  width: 20vw;
+}
+
+.logoleft {
+  width: 10vw;
+  background-color: var(--physcira-dark-wood);
+}
+
+.logoleftcenter {
+  width: 10vw;
+  background-color: var(--physcira-wood);
+  display: flex;
+}
+
+.logoheight {
+  display: flex;
+  width: 43vw;
+  background-color: var(--white);
+  height: auto;
+}
+.logoheight img {
+  width: 100%;
+}
+
+#clearspace {
+  height: 13vw;
+}
+
+.logocapcenter {
+  height: 7vw;
+  width: 43vw;
+  background-color: var(--physcira-wood);
+}
+
+.logoright {
+  width: 10vw;
+  background-color: var(--physcira-dark-wood);
+  height: 100%;
+}
+
+.logorightmiddle {
+  width: 10vw;
+  height: 100%;
+  background-color: var(--physcira-wood);
+}
+
+.clearspaceheight {
+  display: flex;
+  width: 2000px;
+  position: relative;
+  right: 100px;
+  align-items: center;
+}
+
+.clearspacetext {
+  position: relative;
+  right: 30px;
+}
+
+#up {
+  position: absolute;
+  top: 0;
+  right: 9.5vw;
+}
+
+#down {
+  position: absolute;
+  bottom: 0;
+  right: 9.5vw;
+}
+
+.up {
+  transform: rotate(180deg);
+  z-index: 2;
+  background-color: var(--white);
+}
+
+.arrow {
+  position: relative;
+  left: 80px;
+}
+
+.down {
+  position: relative;
+  top: 8px;
+  overflow: hidden;
+}
+
+/*touchpoints*/
+.touchpoint {
+  width: 50vw;
+  margin: 3em 0 0 15em;
+  line-height: 1.7em;
+}
+
+.palette {
+  padding: 2em 0 2em;
+}
+.palette h2 {
+  font-size: 2em;
+}
+
+.mediasection {
+  width: 50vw;
+  margin: 1em 0 3em 14em;
+}
+.mediasection .mediatitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8em;
+  margin: 1em 0em 0em;
+  color: var(--black);
+}
+
+.typosection {
+  padding-left: 15em;
+  padding-right: 15em;
+  padding-bottom: 5em;
+}
+
+.typography {
+  background-color: var(--physcira-gold);
+  color: var(--black);
+}
+
+.typotitle h2 {
+  margin: 0.2em 0;
+  font-size: 1.6em;
+  font-family: "Mulish", sans-serif;
+}
+.typotitle h2 span {
+  font-size: 0.8em;
+}
+
+.fonttitle h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 5em;
+}
+
+.alphanum {
+  font-size: 3em;
+  word-break: break-all;
+}
+
+.bodycopy {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--physcira-teal);
+  color: white;
+}
+
+.typohead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.typodl {
+  padding-top: 2em;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  right: -200px;
+  top: 0px;
+  font-family: "Mulish", sans-serif;
+}
+
+.button {
+  font-size: 1.5em;
+  height: 3em;
+  width: 10em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.download {
+  background-color: var(--physcira-teal);
+  color: white;
+}
+
+.purchase {
+  background-color: var(--physcira-gold);
+  color: var(--black);
+}
+
+.bold h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 2.5em 0;
+}
+.bold p {
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.regular h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 2.5em 0;
+}
+.regular p {
+  margin-right: 1em;
+}
+
+.italic h3 {
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 2.5em 0;
+}
+.italic p {
+  font-style: italic;
+  margin-right: 1em;
+}
+
+.media {
+  margin: 0.5em 1em 0.5em 0;
+}
+.media:hover {
+  cursor: pointer;
+}
+
+.mediaimg {
+  height: 18vw;
+  width: 22vw;
+}
+
+#team {
+  background: center/contain no-repeat var(--lighter-grey);
+}
+
+#products {
+  background: center/contain no-repeat var(--lighter-grey);
+}
+
+#visualizations {
+  background: center/contain no-repeat url(../images/Visualizations/AmericanPastClientsMap_v7-01.png);
+  background-color: #e6e6e7;
+}
+#visualizations:hover {
+  background-color: var(--physcira-steel);
+}
+
+#locations {
+  background: center/contain no-repeat;
+  background-color: #e6e6e7;
+}
+#locations:hover {
+  background-color: #a4a7a9;
+}
+
+#stockphotos {
+  background: center/contain no-repeat;
+  background-color: #e6e6e7;
+}
+#stockphotos:hover {
+  background-color: #a4a7a9;
+}
+
+#icons {
+  background: center/contain no-repeat url(../images/Icons/square-icons-51.png);
+  background-color: #e6e6e7;
+}
+#icons:hover {
+  background-color: #a4a7a9;
+}
+
+#offices {
+  background: center/contain no-repeat;
+  background-color: #e6e6e7;
+}
+#offices:hover {
+  background-color: #a4a7a9;
+}
+
+#graphics {
+  background: center/contain no-repeat url(../images/Graphics/Anatoliy_1-06.png);
+  background-color: #e6e6e7;
+}
+#graphics:hover {
+  background-color: #a4a7a9;
+}
+
+#colorpalettebutton {
+  display: none;
+}
+
+.itemcount {
+  font-size: 0.7em;
+  margin: 0.5em 0;
+  color: var(--black);
+}
+
+.flexwrap {
+  flex-wrap: wrap;
+  width: 80vw;
+}
+
+#pageend {
+  margin-top: 3em;
+  display: none;
+}
+#pageend h2 {
+  font-size: 1.5em;
+}
+
+.colorblockrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.colorblock {
+  width: 33.33%;
+  align-items: flex-start;
+}
+
+.colorblock label {
+  margin: 50px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.colorblock ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.colorblock ul.rgb {
+  margin-top: 50px;
+}
+
+.colorblock ul.cmyk {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.colorblock ul.hex {
+  margin-top: 1em;
+}
+
+.colorblock li {
+  margin-bottom: 1em;
+}
+
+.primary {
+  height: inherit;
+  min-height: 200px;
+  padding-top: 200px;
+}
+
+.secondary {
+  min-height: 100px;
+  height: inherit;
+}
+
+#color1 {
+  background-color: var(--physcira-teal);
+}
+
+#color2 {
+  background-color: var(--physcira-gold);
+}
+
+#color3 {
+  background-color: var(--physcira-wood);
+}
+
+#color4 {
+  background-color: var(--physcira-dark-teal);
+}
+
+#color5 {
+  background-color: var(--physcira-dark-gold);
+}
+
+#color6 {
+  background-color: var(--physcira-dark-wood);
+}
+
+#color7 {
+  background-color: var(--black);
+}
+
+#color8 {
+  background-color: var(--physcira-steel);
+}
+
+#color9 {
+  background-color: var(--white);
+}
+
+.whitetext {
+  color: #ffffff;
+}
+
+@media all and (max-width: 1440px) {
+  .brand {
+    margin: auto;
+    width: 50vw;
+  }
+  .brandimga,
+  .brandimgb,
+  .brandimgc {
+    align-self: start;
+  }
+  .brandimgd {
+    background: bottom/cover no-repeat url(../images/Artboard1M.png);
+    min-height: 700px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .brandimgd {
+    background: bottom/100% no-repeat url(../images/Artboard1M.png);
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .brandimgdwrap {
+    min-height: 300px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .mediaimg {
+    height: 200px;
+    width: 200px;
+  }
+  .brandsectionwrap {
+    display: block;
+    margin-top: 0;
+  }
+  .brandimga {
+    margin-top: 2em;
+    max-width: 30vw;
+    height: 30vw;
+  }
+  #brandintro {
+    display: flex;
+  }
+  #brandintrotext {
+    width: 60vw;
+    word-wrap: break-word;
+  }
+  .brandsectioncol {
+    margin: 0 1em 0 3em;
+    width: 50%;
+    text-align: left;
+  }
+  .brandsectioncol div {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .brand {
+    margin: 0;
+  }
+  .brandimga,
+  .brandimgb,
+  .brandimgc {
+    align-self: start;
+    width: 100%;
+    margin-bottom: 3em;
+    min-width: 200px;
+  }
+  .brandimgc {
+    margin-top: 3em;
+  }
+  .brandimgd {
+    margin-top: 3em;
+  }
+  .logoimgg {
+    height: 15vw;
+    width: 15vw;
+  }
+  .centertextsection {
+    width: 60vw;
+    margin-top: 100px;
+  }
+  .centertextsectionlarge {
+    margin-top: 130px;
+    width: 60vw;
+  }
+  .centertextsectionlarge .flexrow {
+    flex-direction: column;
+  }
+  .centertextsectionlarge p {
+    max-width: 100%;
+  }
+  .centertextsectionlarge .logoimgc {
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 0.6em;
+    flex-grow: 1;
+  }
+  .centertextsectionlarge .logoimgd {
+    height: 200px;
+  }
+  .centertextsectionlarge .logoimge {
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 0.6em;
+    flex-grow: 1;
+  }
+  .centertextsectionlarge .logoimgf {
+    height: 200px;
+  }
+  .centertextsectionlargebox {
+    margin-top: 75px;
+  }
+  .centertextsectionlargebox p {
+    max-width: 100%;
+  }
+  .logobox {
+    width: 60vw;
+  }
+  .mediaimg {
+    height: 17vw;
+    width: 17vw;
+    margin-right: 0.5em;
+  }
+  .touchpoint {
+    width: 60vw;
+    margin: 1.5em auto;
+    line-height: 1.7em;
+  }
+  .midsection {
+    margin-left: 0;
+  }
+  .mediasection {
+    width: 60vw;
+  }
+  .typosection {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 5em;
+  }
+  .typodl {
+    position: static;
+    margin-right: 0em;
+  }
+  .flexwrap {
+    max-width: 70vw;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 1150px) {
+  .colorblock {
+    padding-top: 30px;
+  }
+  .colorblock label {
+    margin-top: 0;
+  }
+  .colorblock li {
+    margin-bottom: 0.7em;
+  }
+  .colorblock ul {
+    margin-bottom: 0;
+  }
+  .colorblock ul.hex {
+    margin-top: 0;
+  }
+}
+@media all and (max-width: 920px) {
+  .navmain a {
+    font-size: 0.8em;
+  }
+  .headwrap {
+    height: 400px;
+  }
+  .headwrap .navbar {
+    flex-direction: column;
+    margin: 2em 2em 2em 0;
+    text-align: right;
+  }
+  .headwrap .navbar div {
+    margin: 10px 1em 30px;
+  }
+  .brand {
+    margin: auto;
+    width: 90vw;
+  }
+  .textcol {
+    margin: auto;
+    max-width: 80vw;
+  }
+  .logoimgg {
+    align-self: start;
+  }
+  .helpsection {
+    height: 30vw;
+  }
+  .mediasection {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar {
+    align-items: flex-end;
+  }
+  .activepage {
+    border-right: 5px solid var(--white);
+    border-left: none;
+    padding-right: 20px;
+    margin-left: -20px;
+  }
+}
+@media all and (min-height: 880px) {
+  .loginwrap {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .loginwrap::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
+@media all and (max-width: 768px) {
+  .clearspacetext {
+    right: 0px;
+    line-height: 1em;
+  }
+  #brandintro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #brandimga {
+    margin: 0 0 1em 0;
+    max-width: 100vw;
+    height: 340px;
+    width: 100%;
+  }
+  .brandimgd {
+    min-height: 500px;
+  }
+  #brandintrotext {
+    min-width: 80vw;
+  }
+  .flexwrap {
+    min-width: 75vw;
+  }
+  .primary {
+    height: inherit;
+    min-height: 50px;
+  }
+  .secondary {
+    max-height: 350px;
+  }
+}
+@media all and (max-width: 610px) {
+  .brandimgd {
+    min-height: 300px;
+  }
+  #backtotop {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background: var(--scc-black);
+    filter: opacity(80%);
+    margin: 0;
+    right: 0;
+    bottom: 90px;
+    height: 40px;
+    width: 40px;
+    transform: rotate(270deg);
+    padding: 1em;
+  }
+  #backtotop:hover {
+    cursor: pointer;
+  }
+  .pagewrap h1 {
+    font-size: 1.3em;
+  }
+  .pagewrap h2 {
+    font-size: 1em;
+  }
+  .navmain {
+    flex-direction: column;
+    height: 70vh;
+    min-height: 450px;
+  }
+  .navmain > div {
+    height: 100%;
+  }
+  .navmain > div a {
+    font-size: 0.8em;
+    padding: 2vh 0 0 2vh;
+  }
+  .help {
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+  .helpsection {
+    height: 200px;
+  }
+  .brandlogo {
+    width: 30vw;
+  }
+  footer {
+    height: 90px;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+  }
+  footer .scc div {
+    width: 10em;
+    text-align: right;
+    margin-right: 10px;
+  }
+  footer .copyright {
+    padding: 0;
+  }
+  .logoimgg {
+    height: 15vw;
+    width: 15vw;
+  }
+  .empty {
+    height: 0;
+  }
+  #vertflip {
+    flex-direction: column;
+  }
+  .media {
+    display: flex;
+  }
+  .arrow {
+    height: 12vw;
+  }
+  .clearspacetext {
+    margin: 0 -1em 0 2em;
+    font-size: 0.8em;
+  }
+  .hidden {
+    display: none;
+  }
+  .typosection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .alphanum {
+    font-size: 2em;
+  }
+  .typohead {
+    margin: auto;
+  }
+  .typohead .googletip {
+    font-size: 1.2em;
+    width: 60%;
+    text-align: center;
+  }
+  .vertflip {
+    flex-direction: column;
+  }
+  .loginsection {
+    margin: 0;
+  }
+  .loginsection h1 {
+    margin: 0.2em 0 1em 1em;
+  }
+  .logincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .psw {
+    display: flex;
+    justify-content: center;
+  }
+  .logintext {
+    font-family: Mulish;
+    margin-bottom: 2em;
+    padding: 1.5em 20px;
+    width: 70vw;
+    max-width: 440px;
+    font-size: 1em;
+  }
+  .active {
+    transition: 0.2s;
+  }
+  .brandlogo {
+    min-width: 230px;
+    margin: 0;
+  }
+  #signin {
+    width: calc(70vw + 40px);
+    white-space: nowrap;
+    word-break: keep-all;
+    margin: 0;
+    font-size: 1em;
+  }
+  .navbar {
+    display: none;
+  }
+  .menupos {
+    align-items: center;
+    justify-content: center;
+    filter: invert(100%);
+    height: 40px;
+    margin: auto 2em auto 0;
+  }
+  .menupos:hover {
+    cursor: pointer;
+  }
+  .show {
+    display: block;
+  }
+  #menubtn {
+    background: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .divider {
+    border-left: 1px solid var(--white);
+  }
+  .headwrap {
+    padding: 2em 0em 0 1em;
+    max-height: 110px;
+  }
+  .branddash {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .branddash span {
+    display: block;
+    font-size: 1em;
+    width: 100px;
+    word-break: break-word;
+  }
+  #navpadding {
+    padding: 1em 0 2em 0;
+  }
+  #navbranddash {
+    display: flex;
+    flex-direction: column;
+  }
+  #navbranddash span {
+    width: auto;
+    font-size: 1.3em;
+  }
+  #navheadwrap {
+    align-items: center;
+    justify-content: center;
+  }
+  .downloadlogogroup {
+    width: 100%;
+  }
+  .downloadlogogroup .downloadlogo {
+    padding: 1em 0;
+  }
+  .logoimgb {
+    height: 50vw;
+  }
+  .centertextsection,
+  .centertextsectionlarge {
+    margin-top: 2em;
+    min-width: 80vw;
+  }
+  .centertextsectionlargebox {
+    margin-top: 2em;
+  }
+  .rowtextsection {
+    flex-grow: 1;
+  }
+  .flexwrap {
+    max-width: 60vw;
+  }
+  .touchpoint {
+    min-width: 80vw;
+  }
+  .touchpoint h2 {
+    width: 100px;
+  }
+  .button,
+  #colorpalettebutton {
+    height: 3em;
+    width: 85vw;
+    border: none;
+  }
+  .media .mediatitle {
+    margin-top: 0.5em;
+    font-size: 1.1em;
+  }
+  .media .itemcount {
+    font-size: 1em;
+  }
+  .media .mediaimg {
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+  }
+  .mediasection h2 {
+    font-size: 2em;
+  }
+  .colorhide {
+    display: none;
+  }
+  #colorpalettebutton {
+    display: flex;
+    font-size: 1.5em;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--physcira-gold);
+    color: var(--white);
+    margin-bottom: 4em;
+  }
+  #colorpalettebutton:hover {
+    cursor: pointer;
+  }
+  .navshow {
+    display: flex;
+  }
+  .fonttitle h3 {
+    font-size: 4em;
+  }
+  ul {
+    margin-left: -3%;
+  }
+  .colorblockrow {
+    flex-direction: column;
+  }
+  .colorblock {
+    width: 100%;
+  }
+  .colorblock ul.rgb {
+    margin-top: 10px;
+  }
+  .colorblock label {
+    margin: 0, 0, 0, 0;
+  }
+  .primary {
+    min-height: 100px;
+  }
+  .secondary {
+    max-height: 350px;
+  }
+  .menuhide {
+    display: flex;
+  }
+}
+@media all and (min-width: 610px) {
+  .hide {
+    display: none;
+  }
+  .menuhide {
+    display: none;
+  }
+  #backtotop {
+    display: none;
+  }
+}
+@media all and (max-width: 375px) {
+  .clearspacetext {
+    left: 10px;
+  }
+  .brandlogo {
+    min-width: 20vw;
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 320px) {
+  label,
+  li {
+    font-size: 0.8em;
+  }
+}/*# sourceMappingURL=main.css.map */
