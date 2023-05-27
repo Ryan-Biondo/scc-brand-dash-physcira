@@ -16,7 +16,7 @@ Fixed JavaScript bug with close button remaining open on resize
 
 ## Demo
 
-![Brand Guide Navigation Demo](physcirascreenshot.png)
+![Brand Guide Demo](./images/physcirascreenshot.png)
 
 ## Technologies Used
 
@@ -102,11 +102,7 @@ Fixed JavaScript bug with close button remaining open on resize
 
 ## Development Process
 
-During the development process of the Brand Dashboard project, I focused on creating a clean and intuitive user interface. I utilized HTML to structure the content, CSS for styling and layout, and JavaScript for adding interactivity.
-
-The main challenges I faced was ensuring a responsive design that would provide a seamless experience across various devices. I addressed this challenge by implementing media queries and optimizing the layout for different screen sizes.
-
-I utilized flexbox for creating flexible and responsive layouts, and I used JavaScript to help handle navigation and the dropdown menu.
+Sean Craig Creative provided the project to me, and he already had a design. I focused on recreating the design on every detail, including typography and responsivity, all while providing constructive feedback. I utilized HTML to structure the content, CSS for styling and layout, and JavaScript for adding interactivity. The main challenge I faced was ensuring a responsive design that would provide a seamless experience across various devices. I addressed this challenge by implementing media queries and optimizing the layout for different screen sizes. I utilized flexbox for creating flexible and responsive layouts, and I used JavaScript to help handle navigation and the dropdown menu. Sean helped me understand a great deal about the process of putting a site together, file sharing, writing clean code, debugging, and somantic elements.
 
 ## Future Enhancements
 
