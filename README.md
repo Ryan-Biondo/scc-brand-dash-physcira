@@ -16,6 +16,8 @@ Fixed JavaScript bug with close button remaining open on resize
 
 ## Demo
 
+Check out the live site here: [https://physcira.seancraigcreative.com/](https://physcira.seancraigcreative.com/)
+
 ![Brand Guide Demo](./images/physcirascreenshot.png)
 
 ## Technologies Used
